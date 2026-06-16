@@ -36,7 +36,9 @@ public class ClientWorkNavigationTest {
             clientWorkLink.click();
 
             WebElement clientWorkHeading = wait.until(
-                    ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(normalize-space(),'Client Work')]")
+                    ExpectedConditions.visibilityOfElementLocated(
+                            By.xpath("//*[contains(normalize-space(),'Client Work')]")
+                    )
             );
 
             assertTrue(clientWorkHeading.isDisplayed(), "Client Work text should be visible");
